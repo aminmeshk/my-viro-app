@@ -1,29 +1,26 @@
-# Viro Starter Kit
+# My Viro App
 
-This is a blank React Native project setup with Viro.
+This is a testing React Native project with Viro (AR/VR Library for React Native)
 
-## Prerequesites 
+![Application Screen Record](https://raw.githubusercontent.com/aminmeshk/my-viro-app/master/record.gif)
 
-Set up the development environment for [react native](https://reactnative.dev/docs/environment-setup). 
+## Features
+### Screen 1: 
+Detects an image of a MacBook keyboard and draws a 3D Gear shape above it.
 
-> ⚠️ NOTE: The android emulators are not supported by Viro. See [this](https://viro-community.readme.io/docs/frequently-asked-questions#does-this-work-with-ios-simulators-or-android-emulators).
+If you don't have a MacBook, download the image below and put it on a tablet/phone/computer and point the camera at the keyboard image for the device to scan it:
+
+![Keyboard Image](https://raw.githubusercontent.com/aminmeshk/my-viro-app/master/assets/images/laptop/mbp-cr.jpg)
+
+### Screen 2:
+Detects any horizontal flat surface (floor, table, etc.) and draws an image on the surface
 
 ## Installation
 
-1. `git clone https://github.com/ViroCommunity/starter-kit.git`
-2. `cd starter-kit`
-3. `npm install`
+1. `git clone https://github.com/aminmeshk/my-viro-app.git`
+2. `cd my-viro-app`
+3. `yarn install`
 4. `npx pod-install` (iOS)
-5. `npx react-native run-android` or `npx react-native run-ios`
+5. `yarn android` or `yarn ios` (Only will run on physical devices)
 
-if `npx react-native run-android` fails with EACCESS gradlew.bat or EACCESS gradlew, run `chmod +x gradlew.bat` or `chmod +x gradlew`.
-
-NOTE: The variant arguments are not needed for debug or release.
-
-## How to Install Viro in an existing project?
-
-If you are integrating ViroReact into an existing project, have a look at our [Installation instructions](https://github.com/ViroCommunity/viro/blob/main/readmes/INSTALL.md). Please note that this does _not_ work with Expo Managed Workflows. Sorry!
-
-# Need help?
-
-[Reach us in Discord.](https://discord.gg/YfxDBGTxvG)
+if `yarn android` fails with EACCESS gradlew.bat or EACCESS gradlew, run `chmod +x gradlew.bat` or `chmod +x gradlew`.
