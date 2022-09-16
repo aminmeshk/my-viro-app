@@ -4,6 +4,11 @@ This is a testing React Native project with Viro (AR/VR Library for React Native
 
 ![Application Screen Record](https://raw.githubusercontent.com/aminmeshk/my-viro-app/master/record.gif)
 
+## Tech Stack
+- React Native
+- TypeScript
+- Viro React (AR/VR Library for React Native)
+
 ## Features
 ### Screen 1: 
 Detects an image of a MacBook keyboard and draws a 3D Gear shape above it.
@@ -16,6 +21,12 @@ If you don't have a MacBook, download the image below and put it on a tablet/pho
 Detects any horizontal flat surface (floor, table, etc.) and draws an image on the surface
 
 ## Installation
+
+### Prerequisites
+- MacOS Computer (for iOS build)
+- [ARCore Supported Android device](https://developers.google.com/ar/develop#supported_devices) or [ARKit supported iOS device](https://www.apple.com/augmented-reality/) with iOS 11 or higher
+
+### Steps
 
 1. `git clone https://github.com/aminmeshk/my-viro-app.git`
 2. `cd my-viro-app`
