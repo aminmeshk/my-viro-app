@@ -1,10 +1,15 @@
-import {ViroARScene, ViroFlexView, ViroText} from '@viro-community/react-viro';
-import React, {useCallback} from 'react';
-import {StyleSheet} from 'react-native';
-import {Screen1} from './Screen1';
-import {Screen2} from './Screen2';
+import { ScreenProps } from '@types';
+import {
+  ViroARScene,
+  ViroFlexView,
+  ViroText,
+} from '@viro-community/react-viro';
+import React, { useCallback } from 'react';
+import { StyleSheet } from 'react-native';
+import { Screen1 } from './Screen1';
+import { Screen2 } from './Screen2';
 
-export const HomeScreen = ({push}) => {
+export const HomeScreen: React.FC<ScreenProps> = ({ push }) => {
   const handleClick1 = useCallback(() => {
     push(Screen1);
   }, [push]);

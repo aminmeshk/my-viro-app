@@ -9,9 +9,9 @@ import {
   ViroText,
 } from '@viro-community/react-viro';
 import { StyleSheet } from 'react-native';
+import { ScreenProps } from '@types';
 
-export const Screen2 = ({pop}) => {
-
+export const Screen2: React.FC<ScreenProps> = ({ pop }) => {
   return (
     <ViroARScene>
       <ViroFlexView
@@ -46,7 +46,6 @@ export const Screen2 = ({pop}) => {
     </ViroARScene>
   );
 };
-
 
 ViroMaterials.createMaterials({
   box: {

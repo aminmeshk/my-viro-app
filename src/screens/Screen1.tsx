@@ -10,10 +10,10 @@ import {
   ViroOmniLight,
   ViroText,
 } from '@viro-community/react-viro';
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
+import { ScreenProps } from '@types';
 
-export const Screen1 = ({pop}) => {
-
+export const Screen1: React.FC<ScreenProps> = ({ pop }) => {
   return (
     <ViroARScene>
       <ViroFlexView
@@ -45,7 +45,7 @@ export const Screen1 = ({pop}) => {
           rotation={[0, 70, 0]}
           source={require('../../assets/3d-models/gear/gear.vrx')}
           materials={['gear']}
-          animation={{name: 'loopRotate', run: true, loop: true}}
+          animation={{ name: 'loopRotate', run: true, loop: true }}
         />
       </ViroARImageMarker>
     </ViroARScene>
@@ -59,7 +59,6 @@ ViroARTrackingTargets.createTargets({
     physicalWidth: 0.3,
   },
 });
-
 
 ViroMaterials.createMaterials({
   gear: {
@@ -75,7 +74,6 @@ ViroAnimations.registerAnimations({
     duration: 400,
   },
 });
-
 
 const styles = StyleSheet.create({
   container: {
