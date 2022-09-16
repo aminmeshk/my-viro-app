@@ -22,11 +22,18 @@ Detects any horizontal flat surface (floor, table, etc.) and draws an image on t
 
 ## Installation
 
-### Prerequisites
+You can try out the app either by installing the pre-built APK on Android or build the source and run on your iOS/Android device
+
+### 1. Pre-built APK
+See [Release page](https://github.com/aminmeshk/my-viro-app/releases/tag/v1.0), download [my-viro-app.apk](https://github.com/aminmeshk/my-viro-app/releases/download/v1.0/my-viro-app.apk) from the assets and install it on an [ARCore Supported Android device](https://developers.google.com/ar/develop#supported_devices)
+
+### 2. Build from source
+
+#### Prerequisites
 - MacOS Computer (for iOS build)
 - [ARCore Supported Android device](https://developers.google.com/ar/develop#supported_devices) or [ARKit supported iOS device](https://www.apple.com/augmented-reality/) with iOS 11 or higher
 
-### Steps
+#### Steps
 
 1. `git clone https://github.com/aminmeshk/my-viro-app.git`
 2. `cd my-viro-app`
